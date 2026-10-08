@@ -1,0 +1,6 @@
+{
+  "name": "Ma Nith Store ♡",
+  "description": "Cute & feminine stainless steel jewelry boutique. Pretty pieces for your everyday moments.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

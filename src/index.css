@@ -1,0 +1,90 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-sans: 'Kantumruy Pro', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-khmer: 'Kantumruy Pro', system-ui, -apple-system, sans-serif;
+
+  --color-blush-50: #FFF8FA;
+  --color-blush-100: #FFF0F4;
+  --color-blush-200: #FCE2EB;
+  --color-blush-300: #F8C8D8;
+  --color-blush-400: #EF9FB8;
+  --color-blush-500: #DE7294;
+  --color-blush-600: #C24A71;
+
+  --color-cream-bg: #FFFDF9;
+  --color-cream-card: #FFFFFF;
+  --color-cream-soft: #F9F5F0;
+  --color-cream-border: #F3EBE1;
+
+  --color-warm-dark: #382B2A;
+  --color-warm-body: #554443;
+  --color-warm-muted: #8F7B7A;
+}
+
+@keyframes gentle-float {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(3deg);
+  }
+}
+
+@keyframes gentle-pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.9;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+}
+
+.animate-gentle-float {
+  animation: gentle-float 4s ease-in-out infinite;
+}
+
+.animate-gentle-float-delayed {
+  animation: gentle-float 4.5s ease-in-out 1.5s infinite;
+}
+
+.animate-gentle-pulse {
+  animation: gentle-pulse 2.5s ease-in-out infinite;
+}
+
+/* Custom scrollbar for boutique touch */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #FFFDF9;
+}
+::-webkit-scrollbar-thumb {
+  background: #F2D2DE;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #E5AEC1;
+}
+
+/* Smooth scrolling and Khmer typography defaults */
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-khmer);
+  line-height: 1.6;
+}
+
+body {
+  font-family: var(--font-khmer);
+  line-height: 1.6;
+}
+
+/* Proper breathing room for Khmer diacritics */
+.khmer-text {
+  font-family: 'Kantumruy Pro', sans-serif;
+  line-height: 1.65;
+}
